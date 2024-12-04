@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    color: $text;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    line-height: 20px;
+    background: #fff;
+    font-variant-ligatures: none;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    outline: none;
+    scroll-behavior: smooth;
+  }
+  
+  input {
+    border: none;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input,
+  textarea,
+  button {
+    color: $text;
+    font-family: inherit;
+    outline: none;
+    font-variant-ligatures: none;
+  }
+  
+  input[type='number'] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  textarea {
+    min-height: 100px;
+    line-height: 21px;
+    resize: none;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition:
+      $all,
+      background-color 50000s ease-in-out 0s !important;
+  }
+  
+  input[type='text']::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  input[type='text']::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    display: none;
+  }
+  
+  input,
+  textarea {
+    &::-webkit-input-placeholder {
+      color: $grayTextLight !important;
+      transition: all 200ms ease;
+    }
+  
+    &::-moz-placeholder {
+      color: $grayTextLight !important;
+      transition: all 200ms ease;
+    }
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+  
+  svg:not(
+      .apexcharts-canvas svg,
+      .svg-img,
+      .tsqd-transitions-container svg,
+      .sbdocs > h1 svg,
+      .sbdocs > h2 svg,
+      .sbdocs > h3 svg,
+      .sbdocs > h4 svg,
+      .sbdocs > h5 svg,
+      .sbdocs > h6 svg
+    ) {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+  }
+  
+  h1 {
+    margin: 0;
